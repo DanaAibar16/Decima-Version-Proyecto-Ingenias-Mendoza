@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/donaciones.css">
+    <title>Ingenias Mendoza</title>
+</head>
+<body>
+    <!--header no tocar-->
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo" alt="Logo Ingenias Mendoza">Logo :)</a>
+            <!--
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle">
+                <img src="img/menu.png" class="menu-icon" alt="menu">
+            </label>
+            -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="embalses.html">Embalses</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="formaparte.html">Forma parte</a></li>
+                    <li><a href="donaciones.html">Donaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Ingenias Mendoza</h1>
+            <p>
+                Donar para el cuidado de nuestros embalses y diques es una inversión en el futuro de nuestro planeta y en la preservación de nuestros valiosos recursos hídricos. Con tu generosa contribución, podemos garantizar que estas fuentes de vida permanezcan limpias y saludables para las generaciones venideras. Cada donación, sin importar su tamaño, marca una diferencia significativa en la protección de nuestros ecosistemas acuáticos. Tu apoyo nos permite llevar a cabo proyectos vitales de mantenimiento, limpieza y conservación, asegurando que el agua que nos sustenta a todos siga fluyendo pura y abundante. ¡Únete a nuestra causa y contribuye a la salvaguardia de nuestros embalses y diques hoy mismo!
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div id="form-container" class="container">
+            <form id="donation-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Número:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="amount">Monto de la Donación:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Donar</button>
+            </form>
+        </div>
+        <div id="success-message" class="hidden container">
+            <h2>¡Gracias por tu donación!</h2>
+            <p>Tu contribución es muy apreciada. Nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li class="icon-elem"><a href="#" class="icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="icon-elem"><a href="#" class="icon"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem"><a href="#" class="menu-icon">Inicio</a></li>
+            <li class="menu-elem"><a href="#" class="menu-icon">Embalses</a></li>
+            <li class="menu-elem"><a href="#" class="menu-icon">Consejos</a></li>
+            <li class="menu-elem"><a href="#" class="menu-icon">Novedades</a></li>
+            <li class="menu-elem"><a href="#" class="menu-icon">Forma parte</a></li>
+        </ul>
+        <p class="text">@2024 - Todos los derechos reservados Ingenias Mendoza</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="JS/donaciones.js"></script>
+</body>
+</html>
